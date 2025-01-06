@@ -1,4 +1,4 @@
-/*\
+`/*\
     Programmer: Nathaniel Pardee
     ID: W89275
 
@@ -136,18 +136,18 @@ void userSelection(char** arr)
 
 void insertUserSelection(char** arrPtr, char userPosition, char userLetterChoice)
 {
-		 for(int i = 0; i < ROWS; i++){
-		  for(int j = 0; j < COLUMNS; j++){	
+	for(int i = 0; i < ROWS; i++){
+		for(int j = 0; j < COLUMNS; j++){	
 
-				if(arrPtr[i][j]==userPosition){			
-					arrPtr[i][j] = userLetterChoice;
-					std::cout << userLetterChoice << " ";
-		 		 }else{
-					std::cout << arrPtr[i][j] << " ";
-				 }			
-			}								
+			if(arrPtr[i][j]==userPosition){			
+				arrPtr[i][j] = userLetterChoice;
+				std::cout << userLetterChoice << " ";
+		 	 }else{
+				std::cout << arrPtr[i][j] << " ";
+			 }			
+		}									
 				std::cout << std::endl;
-		}
+	}
 }
 
 bool isSpotTaken(char** arr, char userPosition)
